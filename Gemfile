@@ -5,16 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.6'
-# Use twitter-bootstrap-rails
-gem 'therubyracer'
-gem 'less-rails'
-gem 'twitter-bootstrap-rails'
-gem 'jquery-rails'
-# Use postgresql as the database for Active Record
-gem 'pg', '>= 0.18', '< 2.0'
+gem 'rails', '~> 5.1.3'
+# Use mysql as the database for Active Record
+gem 'mysql2', '>= 0.3.18', '< 0.5'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -30,6 +24,14 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+
+gem 'roo-xls'
+
+gem 'config'
+
+gem 'exception_notification'
+
+gem 'active_model_otp'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -41,9 +43,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 2.13'
-  gem 'selenium-webdriver'
+  gem 'bullet'
 end
 
 group :development do
@@ -53,7 +53,64 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'capistrano', '~> 3.6'
+  gem 'capistrano-rvm'
+  gem 'capistrano-rails', '~> 1.3'
+  gem 'capistrano-passenger'
+  gem 'capistrano-bundler', '~> 1.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'devise'
+
+gem 'activeadmin'
+
+gem 'paperclip', '~> 5.0.0'
+
+gem 'paperclip-azure', '~> 1.0'
+
+gem 'active_admin_datetimepicker'
+
+gem 'wash_out'
+
+gem "roo"
+
+gem 'rack-cors', :require => 'rack/cors'
+
+gem 'delayed_job_active_record'
+
+gem "daemons"
+
+gem "sendgrid-actionmailer"
+
+gem "non-stupid-digest-assets"
+
+gem 'activeadmin_addons'
+
+gem 'aasm'
+
+gem 'arctic_admin'
+
+gem 'rubyzip', '>= 1.2.1'
+
+gem 'axlsx', git: 'https://github.com/randym/axlsx.git', ref: '776037c0fc799bb09da8c9ea47980bd3bf296874'
+
+gem 'axlsx_rails'
+
+gem 'paperclip-av-transcoder'
+
+gem 'rest-client'
+
+gem 'cancancan'
+
+gem 'request_store'
+
+gem 'paper_trail', git: 'https://github.com/airblade/paper_trail.git', branch: '5-stable'
+
+gem 'devise-token_authenticatable'
+
+gem 'fcm'
+
+gem 'devise-security', git: 'https://github.com/devise-security/devise-security'
