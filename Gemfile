@@ -114,3 +114,7 @@ gem 'fcm'
 gem 'devise-security', git: 'https://github.com/devise-security/devise-security'
 
 gem "azure-storage", require: false
+
+gem 'nokogiri', '~> 1.8.4'
+
+gem 'pkg-config', '~> 1.1'
